@@ -2,19 +2,50 @@
     ViewBag.Title = "Contact";
 }
 
-    
 
-
-<div id="ks">
-    <h3 class="sz">四则运算考试</h3>
-    <button class="like btn-primary btn-lg">开始考试</button>
-
-    <div class="open">
-        <p>考试时间：60分钟</p>
+<html>
+<body id="ks">
+    <div>
+        <h3 class="sz">四则运算考试</h3>
+        <button  class="like btn-primary btn-lg" onclick="start()">开始考试</button>
+       <dl class="dl-horizontal open">
+           <dt>考试时间:60分钟</dt>
+           <dd id="timer" style="color:red"></dd>
+       </dl>      
+        <div class="_towe">
+            <button class="btn btn-primary btn-lg">交卷</button>
+            <button class="btn btn-primary btn-lg">下载</button>
+            <button class="btn btn-primary btn-lg">打印</button>
+        </div>
     </div>
-    <div class="_towe">
-        <button class="btn btn-primary btn-lg">交卷</button>
-        <button class="btn btn-primary btn-lg">下载</button>
-        <button class="btn btn-primary btn-lg">打印</button>
-    </div>
-</div>
+</body>
+</html>
+
+<script>
+    function start() {
+        CountDown();
+        document.getElementsByClassName("open")[0].style.display="block";
+        document.getElementsByClassName("like")[0].style.display = "none";
+
+    }
+
+    //设置考试时长
+    var maxtime = 60 * 60;  
+    function CountDown() {
+        if (maxtime >= 0) {
+            //分钟
+            minutes = Math.floor(maxtime / 60);
+            //秒
+            seconds = Math.floor(maxtime % 60);
+            msg = "剩余时间：" + minutes + "分" + seconds + "秒";
+            document.all["timer"].innerHTML = msg;
+            if (maxtime == 5 * 60) alert("距离考试结束仅剩5分钟");
+            --maxtime;
+        }
+        else {
+            clearInterval(timer);
+            alert("时间到，考试结束!");
+        }
+    }
+    timer = setInterval("CountDown()", 1000);   
+</script>

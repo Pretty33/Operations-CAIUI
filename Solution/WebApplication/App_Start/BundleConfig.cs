@@ -40,7 +40,7 @@ namespace WebApplication
             bundles.Add(new StyleBundle("~/Content/JqueryUI").Include(
                       "~/Content/themes/base/jquery-ui.css"
                       ));
-            ////绑定JqueryUI的脚本库
+            //////绑定JqueryUI的脚本库
             //bundles.Add(new StyleBundle("~/bundles/JqueryUI").Include(
             //         "~/Content/themes/base/jquery-ui-{version}.js"
             //         ));

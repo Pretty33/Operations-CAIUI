@@ -22,18 +22,18 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("首页", "Index", "Home")</li>
-                    <li>@Html.ActionLink("四则运算练习", "About", "Home")</li>
-                    <li>@Html.ActionLink("四则运算考试", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container bottom-right">
         @RenderBody()
-        @*<hr/>
+        <hr/>
             <footer>
                 <p>&copy; @DateTime.Now.Year -四则运算CAI 1.0版   Annie&YHR </p>
-            </footer>*@
+            </footer>
     </div>
 
     @*绑定样式库*@
