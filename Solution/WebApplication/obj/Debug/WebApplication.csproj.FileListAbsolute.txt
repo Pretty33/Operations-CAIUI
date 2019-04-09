@@ -257,3 +257,4 @@ C:\Users\Administrator\Desktop\Operations-CAIUI\Solution\WebApplication\obj\Debu
 C:\Users\Administrator\Desktop\Operations-CAIUI\Solution\WebApplication\obj\Debug\WebApplication.csproj.CopyComplete
 C:\Users\Administrator\Desktop\Operations-CAIUI\Solution\WebApplication\obj\Debug\WebApplication.dll
 C:\Users\Administrator\Desktop\Operations-CAIUI\Solution\WebApplication\obj\Debug\WebApplication.pdb
+C:\Users\Administrator\Desktop\Operations-CAIUI\Solution\WebApplication\obj\Debug\WebApplication.csprojAssemblyReference.cache
